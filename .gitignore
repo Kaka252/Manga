@@ -1,6 +1,12 @@
 *.iml
 .gradle
 /local.properties
+/.idea/caches
+/.idea/codeStyles
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/gradle.xml
+/.idea/runConfigurations.xml
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
@@ -8,3 +14,4 @@
 /build
 /captures
 .externalNativeBuild
+app/libs/
