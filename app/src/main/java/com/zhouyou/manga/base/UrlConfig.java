@@ -6,7 +6,7 @@ package com.zhouyou.manga.base;
  */
 public class UrlConfig {
 
-    public static final String BASE_URL = "http://120.79.66.128:5001";  // TODO baseUrl
+    public static final String BASE_URL = "http://120.79.66.128:5001";
 
     //抓取腾讯漫画TOP
     public static String TencentTopUrl = "http://ac.qq.com/Comic/all/state/pink/search/hot/page/";
