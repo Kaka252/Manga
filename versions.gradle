@@ -1,0 +1,37 @@
+ext.deps = [:]
+def versions = [:]
+
+versions.app_support = "27.1.1"
+versions.glide = "4.7.1"
+versions.constraint_layout = "1.1.2"
+versions.retrofit = "2.4.0"
+versions.gson = "2.8.5"
+versions.rxjava = "2.1.17"
+versions.rxandroid = "2.0.2"
+
+def deps = [:]
+
+def support = [:]
+support.appcompat = "com.android.support:appcompat-v7:$versions.app_support"
+support.design = "com.android.support:design:$versions.app_support"
+deps.support = support
+
+def retrofit = [:]
+retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit"
+retrofit.converter = "com.squareup.retrofit2:retrofit-converters:$versions.retrofit"
+retrofit.adapters = "com.squareup.retrofit2:retrofit-adapters:$versions.retrofit"
+retrofit.gson = "com.squareup.retrofit2:converter-gson:$versions.retrofit"
+deps.retrofit = retrofit
+
+
+def rxjava2 = [:]
+rxjava2.rxjava = "io.reactivex.rxjava2:rxjava:$versions.rxjava"
+rxjava2.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroid"
+deps.rxjava2 = rxjava2
+
+deps.gson = "com.google.code.gson:gson:$versions.gson"
+deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
+
+deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+
+ext.deps = deps

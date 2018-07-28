@@ -23,14 +23,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
-    implementation 'com.squareup.retrofit2:retrofit-converters:2.4.0'
-    implementation 'com.squareup.retrofit2:retrofit-adapters:2.4.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.1.17'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
-    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation deps.support.appcompat
+    implementation deps.support.design
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.converter
+    implementation deps.retrofit.adapters
+    implementation deps.retrofit.gson
+    implementation deps.glide
+    implementation deps.gson
+    implementation deps.rxjava2.rxjava
+    implementation deps.rxjava2.rxandroid
+    implementation deps.constraint_layout
 }
