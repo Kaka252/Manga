@@ -19,7 +19,6 @@ public class HttpCore {
     private static final int DEFAULT_READ_TIME_OUT = 15;
 
     private Retrofit mRetrofit;
-    private OkHttpClient mOkHttpClient;
 
     private Retrofit getRetrofit() {
         if (mRetrofit == null) {
@@ -33,7 +32,7 @@ public class HttpCore {
     }
 
     private void createRetrofit() {
-        mOkHttpClient = createClient();
+        OkHttpClient mOkHttpClient = createClient();
         mRetrofit = new Retrofit.Builder()
                 .client(mOkHttpClient)
                 .baseUrl(UrlConfig.BASE_URL)
@@ -48,5 +47,9 @@ public class HttpCore {
         builder.writeTimeout(DEFAULT_READ_TIME_OUT, TimeUnit.SECONDS);
         builder.readTimeout(DEFAULT_READ_TIME_OUT, TimeUnit.SECONDS);
         return builder.build();
+    }
+
+    public <T> T getService(Class<T> serviceClass) {
+        return getRetrofit().create(serviceClass);
     }
 }
