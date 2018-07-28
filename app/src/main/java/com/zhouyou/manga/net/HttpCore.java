@@ -1,4 +1,4 @@
-package com.zhouyou.manga.base;
+package com.zhouyou.manga.net;
 
 import java.util.concurrent.TimeUnit;
 
