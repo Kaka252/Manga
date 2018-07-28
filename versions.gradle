@@ -8,6 +8,7 @@ versions.retrofit = "2.4.0"
 versions.gson = "2.8.5"
 versions.rxjava = "2.1.17"
 versions.rxandroid = "2.0.2"
+versions.okhttp = "3.11.0"
 
 def deps = [:]
 
@@ -19,7 +20,7 @@ deps.support = support
 def retrofit = [:]
 retrofit.runtime = "com.squareup.retrofit2:retrofit:$versions.retrofit"
 retrofit.converter = "com.squareup.retrofit2:retrofit-converters:$versions.retrofit"
-retrofit.adapters = "com.squareup.retrofit2:retrofit-adapters:$versions.retrofit"
+retrofit.adapter = "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit"
 retrofit.gson = "com.squareup.retrofit2:converter-gson:$versions.retrofit"
 deps.retrofit = retrofit
 
@@ -33,5 +34,6 @@ deps.gson = "com.google.code.gson:gson:$versions.gson"
 deps.glide = "com.github.bumptech.glide:glide:$versions.glide"
 
 deps.constraint_layout = "com.android.support.constraint:constraint-layout:$versions.constraint_layout"
+deps.okhttp = "com.squareup.okhttp3:okhttp:$versions.okhttp"
 
 ext.deps = deps

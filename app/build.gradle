@@ -27,11 +27,12 @@ dependencies {
     implementation deps.support.design
     implementation deps.retrofit.runtime
     implementation deps.retrofit.converter
-    implementation deps.retrofit.adapters
+    implementation deps.retrofit.adapter
     implementation deps.retrofit.gson
     implementation deps.glide
     implementation deps.gson
     implementation deps.rxjava2.rxjava
     implementation deps.rxjava2.rxandroid
     implementation deps.constraint_layout
+    implementation deps.okhttp
 }
