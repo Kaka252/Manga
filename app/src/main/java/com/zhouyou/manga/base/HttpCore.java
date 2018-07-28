@@ -36,8 +36,7 @@ public class HttpCore {
         mOkHttpClient = createClient();
         mRetrofit = new Retrofit.Builder()
                 .client(mOkHttpClient)
-//                .baseUrl(ServerConfig.getConfig().getHttpUrl()) // TODO baseUrl
-//                .addConverterFactory(new FormBodyConverterFactory())
+                .baseUrl(UrlConfig.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build();
